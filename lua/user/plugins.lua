@@ -56,12 +56,12 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
 
   -- cmp plugins
-  --use "hrsh7th/nvim-cmp" -- The completion plugin
-  --use "hrsh7th/cmp-buffer" -- buffer completions
-  --use "hrsh7th/cmp-path" -- path completions
-  --use "hrsh7th/cmp-cmdline" -- cmdline completions
-  --use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  --use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
 
   -- snippets
   --use "L3MON4D3/LuaSnip" --snippet engine
@@ -84,7 +84,10 @@ return packer.startup(function(use)
 
   -- Git
   --use "lewis6991/gitsigns.nvim"
- 
+
+  -- HVB Postman alternative to test
+  use {"NTBBloodbath/rest.nvim", requires={"nvim-lua/plenary.nvim"}}
+
   use {'neoclide/coc.nvim', branch = 'release'}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
